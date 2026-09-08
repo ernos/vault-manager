@@ -1,0 +1,21 @@
+
+[project]
+name = "vault-manager"
+version = "0.1.0"
+description = "A PySide6 application for managing vaults"
+requires-python = ">=3.14"
+dependencies = [
+    "PySide6>=6.11.2",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyside6-project]
+# Updated to reflect project structure
+main_file = "src/main.py"
+files = ["src/backend.py", "src/models.py", "src/worker.py", "src/resources.py", "src/main.py", "src/vaults.qml", "qmldir"]
